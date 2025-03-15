@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abolos - FAQ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffebee;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .faq-container {
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .faq-header {
+            color: #d32f2f;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .faq-section {
+            margin-top: 20px;
+        }
+        .faq-question {
+            background-color: #ffcdd2;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .faq-answer {
+            display: none;
+            padding: 10px;
+            text-align: left;
+            background-color: #ffebee;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        .faq-question:hover {
+            background-color: #ef9a9a;
+        }
+        img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="faq-container">
+        <!-- Abolos Logo -->
+        <img src="https://i.imgur.com/0uutxWq.png" alt="Abolos Logo" class="logo">
+
+        <h1 class="faq-header">Frequently Asked Questions</h1>
+
+        <!-- General Questions -->
+        <div class="faq-section">
+            <h2>General Questions</h2>
+            
+            <div class="faq-question">What is Abolos? ➕</div>
+            <div class="faq-answer">Abolos is a leading provider of high-quality ceramic and glass products. 🏠✨</div>
+
+            <div class="faq-question">Where is Abolos located? ➕</div>
+            <div class="faq-answer">Our headquarters is in Stockton, CA. 📍</div>
+
+            <div class="faq-question">Do you have a showroom? ➕</div>
+            <div class="faq-answer">We currently operate online and through major retailers like Home Depot and Wayfair. 🏪🛒</div>
+        </div>
+
+        <!-- General Section Image -->
+        <img src="https://i.imgur.com/Le7Shyv.jpeg" alt="General Questions">
+
+        <!-- Product & Ordering -->
+        <div class="faq-section">
+            <h2>Product & Ordering</h2>
+
+            <div class="faq-question">Are your tiles durable? ➕</div>
+            <div class="faq-answer">Yes! Our tiles are designed to be strong, stylish, and long-lasting. 💪💎</div>
+
+            <div class="faq-question">Can I order a sample? ➕</div>
+            <div class="faq-answer">Of course! We offer free samples so you can find the perfect match. 🎨🆓</div>
+
+            <div class="faq-question">Do you offer bulk discounts? ➕</div>
+            <div class="faq-answer">Yes! Contact our sales team for bulk pricing options. 📦💰</div>
+        </div>
+
+        <!-- Product Section Image -->
+        <img src="https://i.imgur.com/6egJ1sE.jpeg" alt="Products & Ordering">
+
+        <!-- Shipping & Delivery -->
+        <div class="faq-section">
+            <h2>Shipping & Delivery</h2>
+
+            <div class="faq-question">How long does shipping take? ➕</div>
+            <div class="faq-answer">Most orders arrive within 3-7 business days. 🚚⏳</div>
+
+            <div class="faq-question">Do you ship internationally? ➕</div>
+            <div class="faq-answer">Currently, we ship across the U.S. but are expanding soon! 🌍✈️</div>
+
+            <div class="faq-question">What if my order arrives damaged? ➕</div>
+            <div class="faq-answer">No worries! Contact us, and we'll replace it immediately. 📞🔄</div>
+        </div>
+
+        <!-- Shipping Section Image -->
+      
+
+    </div>
+
+    <script>
+        document.querySelectorAll(".faq-question").forEach(item => {
+            item.addEventListener("click", () => {
+                let answer = item.nextElementSibling;
+                answer.style.display = (answer.style.display === "block") ? "none" : "block";
+            });
+        });
+    </script>
+
+</body>
+</html>
